@@ -1,0 +1,29 @@
+
+//STUDENT
+###
+POST http://127.0.0.1:8000/api/student/save
+Content-Type: application/json
+
+{
+  "full_name": "frnc",
+  "course": "BSIT",
+  "year_level": "4",
+  "contact_number": "23322",
+  "student_status": "Active"
+}
+
+###
+GET http://127.0.0.1:8000/api/student/getData
+
+###
+PUT http://127.0.0.1:8000/api/student/update
+Content-Type: application/json
+
+{
+  "student_id": "1",
+  "full_name": "frnc",
+  "course": "BSIT",
+  "year_level": "4",
+  "contact_number": "332",
+  "student_status": "Active"
+}
