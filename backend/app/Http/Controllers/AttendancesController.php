@@ -22,12 +22,20 @@ class AttendancesController extends Controller
         return response()->json($data,200);
     }
 
-    public function update(){
-        $data = $this->attendanceService->getAttendance();
-        if(is_null($data)){
-            return response()->json(['message'=>'no attendance found']);
+    public function update(Request $request){
+        $data = $this->attendanceService->updateAttendance($request->attendance_id, $request->all());
+        if (is_null($data)) {
+            return response()->json(['message'=>'no attendance found'],404);
         }
         return response()->json($data,200);
+    }
+
+    public function delete($attendance_id){
+        $data = $this->attendanceService->deleteAttendance($attendance_id);
+        if (is_null($data)) {
+            return response()->json(['message'=>'no attendance found'],404);
+        }
+        return response()->json(['message'=>'attendance deleted :>'],200);
     }
 
 

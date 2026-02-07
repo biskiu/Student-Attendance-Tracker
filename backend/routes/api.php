@@ -17,4 +17,6 @@ Route::controller(StudentsController::class)->group(function () {
 Route::controller(AttendancesController::class)->group(function () {
     Route::post('attendance/save', 'save');
     Route::get('attendance/get', 'get');
+    Route::put('attendance/update', 'update');
+    Route::delete('attendance/delete/{attendance_id}', 'delete');
 });
