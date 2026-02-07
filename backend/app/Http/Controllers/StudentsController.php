@@ -36,6 +36,10 @@ class StudentsController extends Controller
         return response()->json($data,200);
     }
 
-
+    public function delete($student_id){
+        $data = $this->studentService->deleteStudent($student_id);
+        
+        return response()->json($data,200);
+    }
 
 }

@@ -9,6 +9,7 @@ Route::controller(StudentsController::class)->group(function () {
     Route::post('student/save', 'save');
     Route::get('student/getData', 'get');
     Route::put('student/update', 'update');
+    Route::delete('student/delete/{student_id}', 'delete');
 });
 
 

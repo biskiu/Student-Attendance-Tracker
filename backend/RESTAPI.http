@@ -5,10 +5,10 @@ POST http://127.0.0.1:8000/api/student/save
 Content-Type: application/json
 
 {
-  "full_name": "frnc",
+  "full_name": "sdfsdfs",
   "course": "BSIT",
   "year_level": "4",
-  "contact_number": "23322",
+  "contact_number": "09152956378",
   "student_status": "Active"
 }
 
@@ -21,9 +21,18 @@ Content-Type: application/json
 
 {
   "student_id": "1",
-  "full_name": "frnc",
+  "full_name": "Gisele Pilar",
   "course": "BSIT",
   "year_level": "4",
-  "contact_number": "332",
+  "contact_number": "09452956378",
   "student_status": "Active"
 }
+
+###
+DELETE http://127.0.0.1:8000/api/student/delete/3
+
+
+
+
+
+//ATTENDANCE

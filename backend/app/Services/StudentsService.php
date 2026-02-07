@@ -19,4 +19,9 @@ class StudentsService
         return $student;
     }
 
+    public function deleteStudent($student_id){
+        $data = Students::find($student_id);
+        $data->delete();
+    }
+
 } 
