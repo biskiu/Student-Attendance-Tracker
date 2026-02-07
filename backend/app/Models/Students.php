@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Students extends Model
 {
     protected $table = "students";
-    protected $primaryKey = "student_id";   //kung di 'id' ang name kay need ni ideclare
-
+    protected $primaryKey = 'student_id';   //kung di 'id' ang name kay need ni ideclare
+                                            //structure > view relation > on delete change to CASCADE
+                                            //omg na dugay kog debug ani 
     protected $fillable = [
         'full_name',
         'course',

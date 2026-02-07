@@ -11,17 +11,22 @@ class StudentsService
     }
 
     public function getStudent(){
-        return Students::all();
+        return Students::all(); 
     }
 
-    public function updateStudent($student,$newData){
-        $student->update($newData);
-        return $student;
+    public function updateStudent($student, $newval){
+        $data = $student->update($newval);
+        return $data;
     }
 
     public function deleteStudent($student_id){
-        $data = Students::find($student_id);
-        $data->delete();
+        $student = Students::find($student_id);
+        if (is_null($student)) {
+            return null;
+        }
+        $student->delete();
+        return $student;
     }
+
 
 } 
