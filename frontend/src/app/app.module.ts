@@ -8,10 +8,12 @@ import { StudentsComponent } from './components/students/students.component';
 import { MaterialModule } from '../Material/Material.module';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     StudentsComponent,
+
   ],
   imports: [
     BrowserModule,
