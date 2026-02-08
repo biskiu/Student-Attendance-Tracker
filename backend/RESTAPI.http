@@ -5,7 +5,7 @@ POST http://127.0.0.1:8000/api/student/save
 Content-Type: application/json
 
 {
-  "full_name": "SFGDFGFDGDFG",
+  "full_name": "Raesha Manog",
   "course": "BSIT",
   "year_level": "4",
   "contact_number": "09152956378",
@@ -20,8 +20,8 @@ PUT http://127.0.0.1:8000/api/student/update
 Content-Type: application/json
 
 {
-    "student_id": "6",
-    "full_name": "qwsser",
+    "student_id": "1",
+    "full_name": "franco",
     "course": "BSIT",
     "year_level": 4,
     "contact_number": "09152956378",
@@ -29,7 +29,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://127.0.0.1:8000/api/student/delete/8
+DELETE http://127.0.0.1:8000/api/student/delete/1
 
 
 
@@ -55,15 +55,15 @@ PUT http://127.0.0.1:8000/api/attendance/update
 Content-Type: application/json
 
 {
-    "attendance_id": "2",
-    "student_id": "5",
+    "attendance_id": "1",
+    "student_id": "2",
     "attendance_date": "2026-02-06",
     "attendance_status": "Not Marked",
     "remarks": "bad"
 }
 
 ###
-DELETE http://127.0.0.1:8000/api/attendance/delete/4
+DELETE http://127.0.0.1:8000/api/attendance/delete/1
 
 
 
